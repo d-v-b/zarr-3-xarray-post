@@ -15,7 +15,7 @@ def plot_cli(data: str, output: str):
 url = 'gs://gcp-public-data-arco-era5/ar/full_37-1h-0p25deg-chunk-1.zarr-v3'
 
 def plot(df: pl.DataFrame):
-    fig, axs = plt.subplots(dpi=200, figsize=(9, 6))
+    fig, axs = plt.subplots(dpi=200, figsize=(8, 6))
     axs.set_title("Time required to open the ARCO ERA5 dataset in Xarray")
     axs.spines['top'].set_visible(False)
     axs.spines['right'].set_visible(False)
