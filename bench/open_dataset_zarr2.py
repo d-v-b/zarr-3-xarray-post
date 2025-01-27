@@ -9,10 +9,10 @@
 import xarray
 import time
 
-uri = 'gs://gcp-public-data-arco-era5/ar/full_37-1h-0p25deg-chunk-1.zarr-v3'
+url = 'gs://gcp-public-data-arco-era5/ar/full_37-1h-0p25deg-chunk-1.zarr-v3'
 start = time.time()
 xarray.open_dataset(
-	uri,     
+	url,     
 	engine='zarr',     
 	consolidated=False,     
 	storage_options = {'token': 'anon'})
