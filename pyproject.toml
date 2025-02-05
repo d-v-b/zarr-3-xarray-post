@@ -10,4 +10,5 @@ dependencies = [
     "ipykernel>=6.29.5",
     "matplotlib",
     "polars",
+    "zarr>=3.0.1",
 ]

@@ -29,7 +29,9 @@ def benchmark(url: str):
 @click.option('--url', required=True)
 def run_cli(url: str):
 	result = benchmark(url)
-	click.echo(f'{result:0.2f}')
+	zarr_version = zarr.__version__
+	xarray_version = xarray.__version__
+	click.echo(f'{result:0.2f},{zarr_version},{xarray_version}')
 
 if __name__ == '__main__':
 	run_cli()

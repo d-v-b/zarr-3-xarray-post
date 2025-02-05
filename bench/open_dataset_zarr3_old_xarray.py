@@ -3,7 +3,7 @@
 #     "fsspec",
 #     "gcsfs@git+https://github.com/fsspec/gcsfs.git#egg=gcsfs",
 #     "zarr==3.0.1",
-#     "xarray==2025.01.1",
+#     "xarray==2024.11.0",
 #     "click"
 # ]
 # ///
